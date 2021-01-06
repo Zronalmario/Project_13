@@ -1,12 +1,12 @@
 ## Automated ELK Stack Deployment
 
-THIS IS CRYPTO!  The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network depicted below.
 
 ![TEST!](Diagrams/Cloud_Network.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-  - Elk.yml.
+  - [YML Playbooks](https://github.com/Zronalmario/Project_13/tree/main/Ansible%20Playbooks)
 
 This document contains the following details:
 - Description of the Topologu
