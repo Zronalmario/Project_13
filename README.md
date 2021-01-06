@@ -109,18 +109,18 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include webserver and elkserver.
     - go to ansible directory: cd /etc/ansible
     - nano hosts and add this:
-'''      
+```      
        [webservers]
          10.0.0.5 ansible_python_interpreter=/usr/bin/python3
          10.0.0.6 ansible_python_interpreter=/usr/bin/python3
          10.0.0.7 ansible_python_interpreter=/usr/bin/python3
        [elkservers]
 	 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-'''
+```
 - Run the playbook, and navigate to kibana to check that the installation worked as expected.
 	- go to ansible directory: cd /etc/ansible
 	- execute the playbook : ansible-playbook ./Elk.yml
 	- navigate to this URL to check if Elk server is running: 40.121.147.200:5601 
-'''            
+```            
        (note: 40.121.147.200 is the Elk server’s Public IP)
-'''
+```
