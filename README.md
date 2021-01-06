@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![TEST!](Diagrams/Cloud_Network.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
   - [YML Playbooks](https://github.com/Zronalmario/Project_13/tree/main/Ansible_Playbooks)
 
@@ -34,7 +34,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -110,15 +109,18 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include webserver and elkserver.
     - go to ansible directory: cd /etc/ansible
     - nano hosts and add this:
-	-[webservers]
+'''      
+       [webservers]
          10.0.0.5 ansible_python_interpreter=/usr/bin/python3
          10.0.0.6 ansible_python_interpreter=/usr/bin/python3
          10.0.0.7 ansible_python_interpreter=/usr/bin/python3
-        -[elkservers]
+       [elkservers]
 	 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-
+'''
 - Run the playbook, and navigate to kibana to check that the installation worked as expected.
 	- go to ansible directory: cd /etc/ansible
 	- execute the playbook : ansible-playbook ./Elk.yml
-	- navigate to this URL to check if Elk server is running: 40.121.147.200:5601 (note: 40.121.147.200 is the Elk server’s Public IP)
-
+	- navigate to this URL to check if Elk server is running: 40.121.147.200:5601 
+'''            
+       (note: 40.121.147.200 is the Elk server’s Public IP)
+'''
