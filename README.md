@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [YML Playbooks](https://github.com/Zronalmario/Project_13/tree/main/Ansible_Playbooks)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topoloy
 - Access Policies
 - ELK Configuration
   - Beats in Use
